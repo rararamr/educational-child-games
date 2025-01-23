@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('images/numbermatcher.png'); /* Specify the path to your background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 50%;
+    text-align: center;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    color: #333;
+    font-size: 50px; /* Increased font size for the title */
+}
+
+.puzzle-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Increased gap between questions */
+}
+
+.puzzle-cell {
+    width: 10em; /* Adjust the width as needed */
+    height: 10em; /* Adjust the height as needed */
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    user-select: none;
+}
+
+.puzzle-text {
+    font-size: 20px; /* Adjust the font size as needed */
+}
+
+.input-container {
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+}
+
+label {
+    margin-left: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 15px 30px; /* Increased padding */
+    font-size: 18px; /* Increased font size */
+    background-color: black;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px; /* Increased border-radius for a rounded look */
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: red;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+p#result {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Existing styles */
+
+.score-display {
+    font-size: 24px; /* Adjust the font size for lives and total score */
+    margin-top: 10px; /* Add some margin */
+}
+
+/* Additional styles for larger lives and total score text */
+#totalScore, #lives {
+    font-size: 24px; /* Adjust the font size */
+    margin-top: 10px; /* Add some margin */
+}

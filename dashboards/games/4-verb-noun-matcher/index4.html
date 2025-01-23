@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verb vs Noun Game</title>
+  <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+  <div class="container">
+    <h1>"Verb vs Noun" <br> Game</h1>
+    <button id="startButton" onclick="startGame()">Start</button>
+    <div id="word"></div>
+    <div id="buttons" style="display: none;">
+      <button onclick="checkAnswer('verb')">Verb</button>
+      <button onclick="checkAnswer('noun')">Noun</button>
+      <div id="result"></div>
+    </div>
+    <div id="score" style="display: none;">Score: 0</div> <!-- Score display initially hidden -->
+    <div id="timer" style="display: none;">Time Left: 30 seconds</div> <!-- Timer display initially hidden -->
+    <div id="level" style="display: none;">Level: Easy</div> <!-- Level display initially hidden -->    
+    
+  </div>
+
+  <script src="verb.js"></script>
+</body>
+</html>

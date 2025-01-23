@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('images/subj-verb.png'); /* Add the path to your background image */
+  background-size: cover; /* Adjust background size */
+  background-position: center; /* Adjust background position */
+  margin: 0; /* Remove default margin */
+}
+
+.container {
+  max-width: 800px; /* Increase the max-width to make the container bigger */
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px; /* Keep the bottom margin */
+  margin-top: 0; /* Add this line to remove top margin and move the heading to the top */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+}
+
+#startButton {
+  position: absolute;
+  bottom: 30%; /* Adjust the distance from the bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 40px; /* Adjust button font size */
+  padding: 15px 30px; /* Adjust button padding */
+  border: 2px solid #4CAF50; /* Green border */
+  background-color: white;
+  color: #4CAF50; /* Green text */
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#startButton:hover {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Slightly darker shadow on hover */
+}
+
+
+#word {
+  font-size: 70px;
+  margin-bottom: 20px;
+  text-decoration: underline; /* Add underline to the text */
+  text-transform: uppercase; /* Make the text uppercase */
+}
+
+#buttons button {
+  font-size: 55px;
+  padding: 15px 30px; /* Increased padding for larger buttons */
+  margin: 0 10px;
+  border: 2px solid #4CAF50; /* Green border */
+  background-color: white;
+  color: #4CAF50; /* Green text */
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#buttons button:hover {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Slightly darker shadow on hover */
+}
+
+#result {
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+#score {
+  font-size: 50px; /* Adjust the font size */
+  margin-top: 20px; /* Add margin at the top */
+  color: black; /* White text */
+}
+
+#timer {
+  margin-top: 20px; /* Adjust spacing from other elements */
+  font-size: 20px; /* Adjust font size */
+  text-align: center; /* Center the text horizontally */
+  color: #333; /* Adjust color */
+}
+
+#result {
+  display: block; /* Siguraduhing display: block o inline o anumang wastong display value */
+  visibility: visible; /* Siguraduhing visibility: visible */
+}
